@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakension | Play Snake Anywhere, Anytime</title>
+  <meta name="description" content="Snakension is a premium browser extension to play Snake offline or online with smooth controls and high score tracking.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Snakension Logo">
+        <span>Snakension</span>
+      </a>
+      <div class="nav-links">
+        <a href="#installation">Installation</a>
+        <a href="#features">Features</a>
+        <a href="#controls">Controls</a>
+        <a href="https://github.com/iamovi/snakension" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Level up your <span>Downtime.</span></h1>
+        <p>A sleek, responsive browser extension to play Snake anytime—especially when you're offline. No ads, no lag, just classic fun.</p>
+        <a href="https://github.com/iamovi/snakension/releases/latest" class="cta-button">Download Extension</a>
+        
+        <div class="hero-preview">
+          <img src="assets/preview.png" alt="Snakension Gameplay Preview">
+        </div>
+      </div>
+    </section>
+
+    <section id="installation">
+      <div class="container">
+        <div class="section-head">
+          <h2>Get Started</h2>
+          <p>Installing Snakension is quick and easy. Works on Chrome, Edge, and Brave.</p>
+        </div>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h3>Download the Package</h3>
+              <p>Download the <a href="https://github.com/iamovi/snakension/releases/latest" style="color: var(--accent-color)">Zip File</a> from the latest releases and unzip it on your computer.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h3>Open Extensions Page</h3>
+              <p>Navigate to <code>chrome://extensions/</code> (or <code>edge://extensions/</code> if you're on Edge).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h3>Enable Developer Mode</h3>
+              <p>Toggle the <strong>Developer mode</strong> switch in the top-right corner of the extensions page.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h3>Load Unpacked</h3>
+              <p>Click the <strong>Load unpacked</strong> button and select the <code>snakension</code> folder you unzipped.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Premium Features</h2>
+          <p>Designed for the best arcade experience on the web.</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <i data-lucide="wifi-off"></i>
+            <h3>Offline Mode</h3>
+            <p>Automatically suggests playing whenever your internet connection drops. Never be bored again.</p>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="trophy"></i>
+            <h3>High Scores</h3>
+            <p>Your best performances are saved locally. Beat your personal record every time you play.</p>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="layout"></i>
+            <h3>Clean UI</h3>
+            <p>A minimalist design that stays out of your way and focuses on what matters—the game.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="controls">
+      <div class="container">
+        <div class="section-head">
+          <h2>Master the Game</h2>
+          <p>Simple controls for precise movement.</p>
+        </div>
+        
+        <div style="text-align: center; max-width: 600px; margin: 0 auto; background: var(--glass-bg); padding: 3rem; border-radius: 20px; border: 1px solid var(--glass-border);">
+           <i data-lucide="keyboard" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem; display: block;"></i>
+           <h3 style="margin-bottom: 1rem;">Keyboard Support</h3>
+           <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Use the <strong>Arrow Keys</strong> or <strong>WASD</strong> to navigate the snake. Use the <strong>Spacebar</strong> to pause or resume.</p>
+           <div style="display: flex; justify-content: center; gap: 0.5rem;">
+             <span style="background: #333; padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #444;">W</span>
+             <span style="background: #333; padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #444;">A</span>
+             <span style="background: #333; padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #444;">S</span>
+             <span style="background: #333; padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #444;">D</span>
+           </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 iamovi/snakension. Released under the MIT License.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

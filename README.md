@@ -4,6 +4,8 @@ A browser extension to play Snake anytime, especially when you're offline!
 
 ![Snakension](./preview.png)
 
+### Visit Docs [Click Here](./docs/index.html)
+
 ## 📦 Installation
 
 Follow these simple steps to add **Snakension** to your browser (Chrome, Edge, or Brave):
