@@ -21,6 +21,7 @@ Follow these simple steps to add **Snakension** to your browser (Chrome, Edge, o
    - Opera GX: `opera://extensions/`
    - Opera Touch: `opera://extensions/`
    - or manually by navigating to extensions page in your browser.
+   - **Then unzip the file**
 3. Enable **Developer mode** (usually a toggle in the top-right corner).
 4. Click the **Load unpacked** button.
 5. Select the `snakension` folder you just downloaded.
