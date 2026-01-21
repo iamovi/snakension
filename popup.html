@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Tab Navigation -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="game">
+        🎮 Play
+      </button>
+      <button class="tab-btn" data-tab="history">
+        📊 History
+      </button>
+      <button class="tab-btn" data-tab="info">
+        ℹ️ Info
+      </button>
+    </div>
+
+    <!-- Game Tab -->
+    <div class="tab-content active" id="game-tab">
+      <div class="header">
+        <h1>🐍 Snakension</h1>
+        <div class="status">
+          <span id="connectionStatus" class="online">●</span>
+          <span id="statusText">Online</span>
+        </div>
+      </div>
+
+      <div class="game-info">
+        <div class="score-board">
+          <div class="score-item">
+            <span class="label">Score</span>
+            <span id="score" class="value">0</span>
+          </div>
+          <div class="score-item">
+            <span class="label">High Score</span>
+            <span id="highScore" class="value">0</span>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="360" height="360"></canvas>
+
+      <div class="controls">
+        <button id="startBtn" class="btn btn-primary">Start Game</button>
+        <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+        <button id="resetBtn" class="btn btn-secondary">Reset</button>
+      </div>
+
+      <div class="quick-tips">
+        <p>🎯 Use Arrow Keys or WASD • Space to Start/Pause</p>
+      </div>
+    </div>
+
+    <!-- History Tab -->
+    <div class="tab-content" id="history-tab">
+      <div class="history-header">
+        <h2>📊 Score History</h2>
+        <button id="clearHistoryBtn" class="btn-clear">Clear History</button>
+      </div>
+
+      <div class="history-stats">
+        <div class="stat-card">
+          <div class="stat-label">Total Games</div>
+          <div class="stat-value" id="totalGames">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Average Score</div>
+          <div class="stat-value" id="avgScore">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Best Score</div>
+          <div class="stat-value" id="bestScore">0</div>
+        </div>
+      </div>
+
+      <div class="history-list-container">
+        <h3>Recent Games</h3>
+        <div id="historyList" class="history-list">
+          <div class="empty-history">
+            <p>🎮 No games played yet</p>
+            <p class="empty-subtext">Start playing to see your score history!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Tab -->
+    <div class="tab-content" id="info-tab">
+      <div class="info-header">
+        <h2>🐍 About Snakension</h2>
+        <p class="version">Version 1.0.0</p>
+      </div>
+
+      <div class="info-section">
+        <h3>🎮 How to Play</h3>
+        <ul class="info-list">
+          <li>Use <strong>Arrow Keys</strong> or <strong>WASD</strong> to move the snake</li>
+          <li>Eat the <span class="red-dot">red food</span> to grow longer</li>
+          <li>Snake wraps around when hitting borders</li>
+          <li>Don't hit your own body!</li>
+          <li>Press <strong>Space</strong> to start, pause, or resume anytime</li>
+          <li>Speed increases as your score goes up</li>
+        </ul>
+      </div>
+
+      <div class="info-section">
+        <h3>🎯 Features</h3>
+        <ul class="info-list">
+          <li>Play anytime by clicking the extension icon</li>
+          <li>Get notified when you go offline</li>
+          <li>High score automatically saved</li>
+          <li>Smooth gameplay with progressive difficulty</li>
+          <li>Beautiful graphics and animations</li>
+        </ul>
+      </div>
+
+      <div class="info-section">
+        <h3>⌨️ Controls</h3>
+        <div class="controls-grid">
+          <div class="control-item">
+            <span class="key">↑ ↓ ← →</span>
+            <span class="desc">Arrow Keys</span>
+          </div>
+          <div class="control-item">
+            <span class="key">W A S D</span>
+            <span class="desc">Alternative</span>
+          </div>
+          <div class="control-item">
+            <span class="key">Space</span>
+            <span class="desc">Start/Pause</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-footer">
+        <p>Made by Ovi ren, for offline gaming</p>
+        <p class="tip">💡 Tip: Pin this extension for quick access!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
