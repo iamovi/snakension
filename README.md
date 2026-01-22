@@ -1,25 +1,23 @@
-# Snakension 🐍
+<img src="./icons/icon128.png" alt="Snakension" width="50">
 
-A browser extension to play Snake anytime, especially when you're offline!
+# Snakension 
 
 <img src="./preview.png" alt="Snakension" width="300">
 
-<<<<<<< HEAD
+A browser extension to play Snake anytime, especially when you're offline!
+
 ### ^_^ Visit Docs [Click Here](./docs/index.html)
 
 **Notifies you when you're offline to play this game.**
 
 <img src="./offline_preview.png" alt="Snakension" width="300">
-=======
-### Visit Docs [Click Here](https://iamovi.github.io/snakension)
->>>>>>> 716bf851ea7e411bf36d027600d09d7dfda9ea8c
 
 ## 📦 Installation
 
 Follow these simple steps to add **Snakension** to your browser (Chrome, Edge, or Brave):
 
 1. Download the [Zip File](https://github.com/iamovi/snakension/releases/latest) from latest releases.
-- or [click here](./main/v1.0.0/snakension.zip) to download.
+- or [click here](https://github.com/iamovi/snakension/releases/download/snakensiom/snakension.zip) to download.
 2. Open your browser and go to the **Extensions** page:
    - Chrome: `chrome://extensions/`
    - Edge: `edge://extensions/`
