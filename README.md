@@ -2,9 +2,17 @@
 
 A browser extension to play Snake anytime, especially when you're offline!
 
-![Snakension](./preview.png)
+<img src="./preview.png" alt="Snakension" width="300">
 
+<<<<<<< HEAD
+### ^_^ Visit Docs [Click Here](./docs/index.html)
+
+**Notifies you when you're offline to play this game.**
+
+<img src="./offline_preview.png" alt="Snakension" width="300">
+=======
 ### Visit Docs [Click Here](https://iamovi.github.io/snakension)
+>>>>>>> 716bf851ea7e411bf36d027600d09d7dfda9ea8c
 
 ## 📦 Installation
 
